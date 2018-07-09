@@ -1,0 +1,113 @@
+body{
+	background-color: #e3f2fd;
+}
+
+.navbar{
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+   
+	background-color:#92a3cc;
+}
+
+.jumbotron{
+	background-color:#e3f2fd;
+}
+
+.card{
+	border-color: #92a3cc;
+
+}
+
+.list{
+	position: absolute;
+	list-style-type: none;
+	overflow: hidden;
+	animation-name: slidein;
+	animation-duration: 5s;
+
+	-webkit-box-shadow: 0 #999; 
+    -moz-box-shadow: 0 #999;
+    box-shadow: 0 #999;
+
+}
+
+@keyframes slidein{
+	from{
+		left: -1000px;
+	}
+
+	to{
+		left: 10em;
+	}
+}
+
+.list:nth-child(1){
+	top: 150px;
+	left: 10em; 
+	right: 850px;
+	text-align: left;
+	color: white;
+}
+
+
+.list:nth-child(2){
+	top: 350px;
+	left: 10em;
+	right: 850px;
+	text-align: left;
+	color: white;
+	
+}
+
+.list:nth-child(3){
+	top:550px;
+	left: 10em;
+	right: 850px;
+	text-align: left;
+	color: white;
+	
+}
+
+.list:nth-child(4){
+	top: 800px;
+	left: 10em;
+	right: 850px;
+	text-align: left;
+	color: white;
+	
+}
+
+.carousel-control-next:hover {
+	background-color: grey;
+	opacity: 0.3;
+	transition-duration: 1s;
+}
+
+.carousel-control-prev:hover {
+	background-color: grey;
+	opacity: 0.3;
+	transition-duration: 1s;
+}
+
+.nav-link:hover{
+	background-color: cyan;
+	transition-duration: 0.5s;
+}
+
+#landing{
+	padding-top: 10px;
+	position: relative;
+}
+
+#profile{
+	width: 125em;
+	height:70em;
+	padding:30px 80px; 
+
+}
+
+#projects{
+
+}
