@@ -43,41 +43,16 @@ body{
 	}
 }
 
-.list:nth-child(1){
+.list{
 	top: 150px;
 	left: 10em; 
 	right: 850px;
 	text-align: left;
 	color: white;
+	font-size: 16pt;
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 
-
-.list:nth-child(2){
-	top: 350px;
-	left: 10em;
-	right: 850px;
-	text-align: left;
-	color: white;
-	
-}
-
-.list:nth-child(3){
-	top:550px;
-	left: 10em;
-	right: 850px;
-	text-align: left;
-	color: white;
-	
-}
-
-.list:nth-child(4){
-	top: 800px;
-	left: 10em;
-	right: 850px;
-	text-align: left;
-	color: white;
-	
-}
 
 .carousel-control-next:hover {
 	background-color: grey;
