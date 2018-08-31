@@ -15,44 +15,205 @@ body{
 	background-color:#e3f2fd;
 }
 
-.card{
+.card-header{
 	border-color: #92a3cc;
 
 }
 
-.list{
-	position: absolute;
-	list-style-type: none;
-	overflow: hidden;
-	animation-name: slidein;
-	animation-duration: 5s;
+.wrapper{
+ width :100%;
+ margin: 0 auto;
+
+}
+
+.profile-container{
+display:flex;
+flex-wrap: wrap;
+flex: 1 1 300px;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+}
+
+#profile{
+width: 1500px;
+height:60em;
+padding:30px 80px; 
+		
+}
+
+.name{
+
+
+}
+
+.job{
+
+
+}
+
+.button{
+ 
+}
+
+.desc{
+position: relative;
+top: -750px;
+overflow-wrap: wrap;
+padding-left: 600px;
+padding-right: 600px;
+right: 250px;
+color: white;
+font-size: 14pt;
+text-shadow: 1px 1px 1px red, 0 0 1em blue, 0 0 0.2em blue;
+flex-shrink: 0;
+
+animation-name: fadein;
+	animation-duration: 3s;
+	-moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+
 
 	-webkit-box-shadow: 0 #999; 
     -moz-box-shadow: 0 #999;
     box-shadow: 0 #999;
 
 }
+.card-body{
+	text-align: left;
+}
 
-@keyframes slidein{
+
+@keyframes fadein{
 	from{
-		left: -1000px;
+		opacity: 0;
 	}
 
 	to{
-		left: 10em;
+		opacity: 1;
 	}
 }
 
-.list{
-	top: 150px;
-	left: 10em; 
-	right: 850px;
-	text-align: left;
-	color: white;
-	font-size: 16pt;
-	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+@-moz-keyframes fadein{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
 }
 
+@-o-keyframes fadein{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadein{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1700px){
+.desc{
+	position: relative;
+	top: -750px;
+	overflow-wrap: wrap;
+	padding-left: 450px;
+	padding-right: 450px;
+	right: 200px;
+	color: white;
+	font-size: 14pt;
+	text-shadow: 1px 1px 1px red, 0 0 1em blue, 0 0 0.2em blue;
+	flex-shrink: 0;
+	}	
+}
+
+@media screen and (max-width: 1600px){
+.desc{
+	position: relative;
+	top: -750px;
+	overflow-wrap: wrap;
+	padding-left: 450px;
+	padding-right: 450px;
+	right: 200px;
+	color: white;
+	font-size: 14pt;
+	text-shadow: 1px 1px 1px red, 0 0 1em blue, 0 0 0.2em blue;
+	flex-shrink: 0;
+	}
+}
+
+@media screen and (max-width: 1400px){
+.desc{
+	position: relative;
+	top: -750px;
+	overflow-wrap: wrap;
+	padding-left: 350px;
+	padding-right: 350px;
+	right: 200px;
+	color: white;
+	font-size: 14pt;
+	text-shadow: 1px 1px 1px red, 0 0 1em blue, 0 0 0.2em blue;
+	flex-shrink: 0;
+	}
+}
+
+@media screen and (max-width: 1060px){
+.desc{
+	position: relative;
+	top: -750px;
+	overflow-wrap: wrap;
+	padding-left: 300px;
+	padding-right: 300px;
+	right: 150px;
+	color: white;
+	font-size: 14pt;
+	text-shadow: 1px 1px 1px red, 0 0 1em blue, 0 0 0.2em blue;
+	flex-shrink: 0;
+	}
+}
+
+@media screen and (max-width: 960px){
+.desc{
+	position: relative;
+	top: -750px;
+	overflow-wrap: wrap;
+	padding-left: 250px;
+	padding-right: 250px;
+	right: 150px;
+	color: white;
+	font-size: 14pt;
+	text-shadow: 1px 1px 1px red, 0 0 1em blue, 0 0 0.2em blue;
+	flex-shrink: 0;
+	}
+}
+
+@media screen and (max-width: 850px){
+	.desc{
+	position: relative;
+	top: -750px;
+	overflow-wrap: wrap;
+	padding-left: 210px;
+	padding-right: 210px;
+	right: 120px;
+	color: white;
+	font-size: 14pt;
+	text-shadow: 1px 1px 1px red, 0 0 1em blue, 0 0 0.2em blue;
+	flex-shrink: 0;
+	}
+}
 
 .carousel-control-next:hover {
 	background-color: grey;
@@ -67,8 +228,9 @@ body{
 }
 
 .nav-link:hover{
-	background-color: cyan;
+	background-color: #6b7899;
 	transition-duration: 0.5s;
+	color: white;
 }
 
 #landing{
@@ -76,13 +238,5 @@ body{
 	position: relative;
 }
 
-#profile{
-	width: 125em;
-	height:70em;
-	padding:30px 80px; 
 
-}
 
-#projects{
-
-}
